@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ivImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="jemal" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="kakauridze" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/ivImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:text="jemal.kakauridze@gmail.com" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
